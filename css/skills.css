@@ -1,0 +1,34 @@
+@import url("style.css");
+@import url("certificate.css");
+@import url("top.css");
+section#section-skills {
+    z-index: -2;
+}
+
+.section-skills {
+    height: 100%;
+    background-color: #f8f9fa89;
+}
+
+.frontend {
+    height: 450px;
+    margin: 20px;
+    /* border-radius: 5px; */
+}
+
+.backend {
+    height: 450px;
+    margin: 20px;
+    /* border-radius: 5px; */
+}
+
+.check-mark {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.3em;
+}
+
+.check-mark span {
+    font-size: 146x;
+    font-weight: 900;
+}

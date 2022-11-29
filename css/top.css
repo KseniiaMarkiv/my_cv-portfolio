@@ -1,0 +1,118 @@
+@import url("style.css");
+.container-top {
+    /* z-index: -1; */
+    /* border: solid #444; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+
+/* .container-button {
+    top: 26rem;
+    left: 3rem;
+} */
+
+.container-button button {
+    border: solid 3px #ffc107;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 2px 5px 16px 0px rgba(255, 255, 255, 0.73);
+    box-shadow: 2px 5px 16px 0px #0B325E, 2px 5px 16px 0px rgba(255, 255, 255, 0.73);
+    font-weight: bold;
+}
+
+.container-button button:hover {
+    color: rgba(68, 68, 68, 0.9);
+}
+
+.block {
+    position: absolute;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.block:nth-child(3n+2) {
+    background: rgba(68, 68, 68, 0.9);
+}
+
+.block:nth-child(3n+3) {
+    background: rgba(255, 146, 19, 0.9);
+}
+
+section#section-top {
+    position: relative;
+    width: 100%;
+    height: 50em;
+}
+
+p.name-hi {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px -2px 4px rgb(0, 0, 0), -3px 2px 5px rgba(0, 0, 0, 1);
+}
+
+h1.top-container-name {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 2.2vw;
+    letter-spacing: 2px;
+    text-shadow: -3px -3px 3px rgba(255, 255, 255, .1), 3px 3px 3px rgba(255, 146, 19, .5);
+}
+
+div.name-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+div#name-container {
+    background-color: #f8f9fa89;
+    width: 50rem;
+    height: 35rem;
+    border-radius: 50%;
+    padding: 6rem 6rem;
+    /* border-radius: 10% / 50%; */
+}
+
+div.about {
+    /* background-color: #f8f9fa7c; */
+    border-radius: 5px;
+    padding: 15px;
+    letter-spacing: 1.2px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    text-shadow: 0px 1px 0px black;
+    font-size: 1.1vw;
+}
+
+
+/* image Avatar */
+
+div.container-avatar {
+    display: flex;
+    justify-content: end;
+}
+
+img.avatar {
+    border: 0.2rem solid rgba(255, 255, 255, 0.39);
+    border-radius: 50%;
+    width: 100%;
+    height: 50%;
+}
+
+div.name {
+    background-color: #f8f9fa00;
+}
+
+p.dev {
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(255, 146, 19), 0 0 30px rgb(255, 146, 19), 0 0 40px rgb(255, 146, 19), 0 0 55px rgb(255, 146, 19), 0 0 75px rgb(255, 146, 19);
+}
