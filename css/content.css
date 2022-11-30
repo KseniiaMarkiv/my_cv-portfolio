@@ -1,183 +1,20 @@
 @import url("style.css");
-
-/* common */
-
-a.button {
-    border-radius: 5px;
+.examples {
+    margin-top: 6rem;
+    height: 36rem;
+    background-color: aqua;
 }
 
-.container-content .box {
-    border-radius: 5px;
-}
-
-
-/* common */
-
-.container-content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* if you need in horizontal, comment string below */
-    flex-wrap: wrap;
-    padding: 20px 0;
-    gap: 30px;
-}
-
-.container-content .box {
-    position: relative;
-    background-color: #f8f9fa;
-    width: 28rem;
-    height: 40em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-content .box::before {
-    content: "";
-    position: absolute;
-    inset: -10px 50px;
-    border-top: 4px solid var(--clr);
-    border-bottom: 4px solid var(--clr);
-    z-index: -1;
-    transform: skewY(-15deg);
-    /*  - it's toward in right corner by X axis */
-    /* transform: skewX(15deg); */
-    transition: 0.5s ease-in-out;
-}
-
-.container-content .box:hover::before {
-    transform: skewY(0deg);
-    inset: -10px 40px;
-}
-
-.container-content .box::after {
-    content: "";
-    position: absolute;
-    inset: 60px -10px;
-    border-left: 4px solid var(--clr);
-    border-right: 4px solid var(--clr);
-    z-index: -1;
-    transform: skew(-15deg);
-    /* transform: skewX(15deg);  - it's toward in right corner by X axis */
-    transition: 0.5s ease-in-out;
-}
-
-.container-content .box:hover::after {
-    transform: skew(0deg);
-    inset: 40px -10px;
-}
-
-.container-content .box .content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 0 20px;
-    width: 100%;
-    height: 100%;
+.cell {
+    width: 33%;
+    height: 350px;
+    margin: 0 15px;
     overflow: hidden;
+    border-radius: 8px;
 }
 
-.container-content .box .content .carousel-inner .carousel-item {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 0 20px;
+.cell img {
     width: 100%;
-    height: 150%;
-    overflow: hidden;
-}
-
-.container-content .box .content .imgs {
-    color: var(--clr);
-    width: 25rem;
-    height: 20rem;
-    box-shadow: 0 0 0 4px #f8f9fa, 0 0 0 6px var(--clr);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-    background: #f8f9fa;
-    transition: 0.5s ease-in-out;
-}
-
-.container-content .box:hover .content .imgs {
-    background: var(--clr);
-    color: #f8f9fa;
-    box-shadow: 0 0 0 4px #f8f9fa, 0 0 0 300px var(--clr);
-}
-
-.container-content .box:hover .content .imgs img {
-    width: 100%;
-    height: 100%;
-}
-
-.container-content .box .content .text h3 {
-    font-size: 1.5em;
-    font-weight: 500;
-    transition: 0.5s ease-in-out;
-}
-
-.container-content .box:hover .content .text h3 {
-    color: #f8f9fa;
-    font-weight: 600;
-}
-
-.container-content .box .content .text p {
-    transition: 0.5s ease-in-out;
-    color: rgb(100, 96, 96);
-}
-
-.container-content .box:hover .content .text p {
-    color: #f8f9fa;
-}
-
-.container-content .box .content .text a {
-    position: relative;
-    background: var(--clr);
-    color: #f8f9fa;
-    padding: 6px 15px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
-    transition: 0.5s ease-in-out;
-}
-
-.container-content .box:hover .content .text a {
-    background: #f8f9fa;
-    color: var(--clr);
-    font-weight: 600;
-}
-
-.git {
-    margin-right: 25px;
-}
-
-.container-content .box .content .text a.link {
-    margin-left: 25px;
-    padding: 6px 27px;
-}
-
-.container-content .box .content .text ul.list-skills {
-    line-height: 1rem;
-    list-style-type: circle;
-    text-align: left;
-    color: rgb(100, 96, 96);
-}
-
-.container-content .box:hover .content .text ul.list-skills {
-    line-height: 1rem;
-    list-style-type: circle;
-    text-align: left;
-    color: #f8f9fa;
+    height: 350px;
+    object-fit: cover;
 }
