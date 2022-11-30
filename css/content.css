@@ -28,7 +28,7 @@ a.button {
     position: relative;
     background-color: #f8f9fa;
     width: 28rem;
-    height: 28rem;
+    height: 40em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,10 +83,10 @@ a.button {
     overflow: hidden;
 }
 
-.container-content .box .content .icon {
+.container-content .box .content .imgs {
     color: var(--clr);
-    width: 80px;
-    height: 80px;
+    width: 25rem;
+    height: 15rem;
     box-shadow: 0 0 0 4px #f8f9fa, 0 0 0 6px var(--clr);
     display: flex;
     justify-content: center;
@@ -96,10 +96,15 @@ a.button {
     transition: 0.5s ease-in-out;
 }
 
-.container-content .box:hover .content .icon {
+.container-content .box:hover .content .imgs {
     background: var(--clr);
     color: #f8f9fa;
     box-shadow: 0 0 0 4px #f8f9fa, 0 0 0 300px var(--clr);
+}
+
+.container-content .box:hover .content .imgs img {
+    width: 100%;
+    height: 100%;
 }
 
 .container-content .box .content .text h3 {
@@ -115,7 +120,7 @@ a.button {
 
 .container-content .box .content .text p {
     transition: 0.5s ease-in-out;
-    color: #999;
+    color: rgb(100, 96, 96);
 }
 
 .container-content .box:hover .content .text p {
@@ -147,4 +152,29 @@ a.button {
 .container-content .box .content .text a.link {
     margin-left: 25px;
     padding: 6px 27px;
+}
+
+
+/* carrousel */
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234688FB' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234688FB' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.container-content .box .content .text ul.list-skills {
+    line-height: 1rem;
+    list-style-type: circle;
+    text-align: left;
+    color: rgb(100, 96, 96);
+}
+
+.container-content .box:hover .content .text ul.list-skills {
+    line-height: 1rem;
+    list-style-type: circle;
+    text-align: left;
+    color: #f8f9fa;
 }
