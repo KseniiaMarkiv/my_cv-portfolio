@@ -2,24 +2,12 @@
 @import url("certificate.css");
 @import url("top.css");
 section#section-skills {
-    z-index: -2;
+    z-index: 1;
+    height: auto;
 }
 
 .section-skills {
-    height: 100%;
     background-color: #f8f9fa89;
-}
-
-.frontend {
-    height: 450px;
-    margin: 20px;
-    /* border-radius: 5px; */
-}
-
-.backend {
-    height: 450px;
-    margin: 20px;
-    /* border-radius: 5px; */
 }
 
 .check-mark {
@@ -31,4 +19,12 @@ section#section-skills {
 .check-mark span {
     font-size: 146x;
     font-weight: 900;
+}
+
+.frontend {
+    padding: 8px;
+}
+
+.backend {
+    padding: 8px;
 }

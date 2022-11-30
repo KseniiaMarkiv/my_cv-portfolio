@@ -49,11 +49,6 @@ nav {
     z-index: 1;
 }
 
-div.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-}
-
 #section-skills {
     padding: 10px;
     height: 50em;
