@@ -87,3 +87,12 @@ footer {
 .main-font {
     font-family: var(--font-main);
 }
+
+
+/* footer */
+
+.items-footer {
+    position: relative;
+    top: -21px;
+    left: -150px;
+}

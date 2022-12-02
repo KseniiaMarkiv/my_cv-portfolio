@@ -193,6 +193,16 @@ section#sectionTop {
         top: -8px;
         right: 40px;
     }
+    /* footer */
+    #footer {
+        position: relative;
+        left: 50px;
+    }
+    .items-footer {
+        position: relative;
+        top: -21px;
+        left: -50px;
+    }
 }
 
 
@@ -255,6 +265,15 @@ section#sectionTop {
         position: relative;
         top: -1px;
         right: 125px;
+    }
+    #footer {
+        position: relative;
+        left: 20px;
+    }
+    .items-footer {
+        position: relative;
+        top: -61px;
+        left: 110px;
     }
 }
 
@@ -347,6 +366,20 @@ section#sectionTop {
         position: relative;
         top: -1px;
         right: 105px;
+    }
+    #footer {
+        position: relative;
+        left: 20px;
+    }
+    .items-footer {
+        position: relative;
+        top: -61px;
+        left: 110px;
+    }
+    img.preply {
+        position: relative;
+        /* top: -61px; */
+        left: 10px;
     }
 }
 
