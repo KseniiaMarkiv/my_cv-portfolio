@@ -9,7 +9,7 @@ function generate() {
     anime({
         targets: '.block',
         translateX: function() {
-            return anime.random(-800, 800)
+            return anime.random(-700, 700)
         },
         translateY: function() {
             return anime.random(-600, 350)

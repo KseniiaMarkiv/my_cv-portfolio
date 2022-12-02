@@ -1,3 +1,5 @@
+@import url("style.css");
+@import url("media-queries.css");
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&EB+Garamond:ital@0;1&Dancing+Script&family=Permanent+Marker&family=Poppins&family=Raleway:wght@200;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
@@ -24,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* overflow: hidden; */
+    overflow: visible;
 }
 
 nav {
@@ -49,7 +51,7 @@ nav {
     z-index: 1;
 }
 
-#section-skills {
+#sectionSkills {
     padding: 10px;
     height: 50em;
     width: 100%;
@@ -57,7 +59,7 @@ nav {
     border-style: outset; */
 }
 
-#section-sertificate {
+#sectionCertificate {
     padding: 10px;
     height: 50em;
     width: 100%;
@@ -73,6 +75,10 @@ section #hours {
 footer {
     height: 5em;
     width: 100%;
+}
+
+.section-contacts a {
+    text-decoration: none;
 }
 
 

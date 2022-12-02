@@ -1,13 +1,13 @@
 @import url("style.css");
-@import url("certificate.css");
-@import url("top.css");
-section#section-skills {
+@import url("media-queries.css");
+section#sectionSkills {
     z-index: 1;
     height: auto;
 }
 
 .section-skills {
     background-color: #f8f9fa89;
+    margin-top: 7rem!important;
 }
 
 .check-mark {

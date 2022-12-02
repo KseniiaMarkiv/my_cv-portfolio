@@ -1,4 +1,5 @@
 @import url("style.css");
+@import url("media-queries.css");
 .examples {
     margin-top: 6rem;
     height: 36rem;
@@ -36,6 +37,32 @@
         object-fit: cover;
     }
 }
+
+
+/* examples */
+
+.examples {
+    margin-top: 6rem;
+    height: 36rem;
+    background-color: aqua;
+}
+
+.cell {
+    width: 45%;
+    height: 350px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cell img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* end examples */
 
 
 /********** Medium devices only **********/
