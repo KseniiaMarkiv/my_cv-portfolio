@@ -70,8 +70,6 @@ div.name-container {
 
 div#name-container {
     background-color: #f8f9fa89;
-    width: 50rem;
-    height: 25rem;
     border-radius: 10px;
     padding: 3rem 3rem;
     margin-left: 60px;
@@ -122,9 +120,9 @@ p.dev {
     div#name-container {
         background-color: #f8f9fa89;
         width: 50rem;
-        height: 25rem;
+        height: 27rem;
         border-radius: 10px;
-        border-radius: 10% / 50%;
+        /* border-radius: 10% / 50%; */
     }
     div.about {
         /* background-color: #f8f9fa7c; */
@@ -144,10 +142,10 @@ p.dev {
 @media (min-width: 1200px) and (max-width: 1400px) {
     div#name-container {
         background-color: #f8f9fa89;
-        width: 50rem;
-        height: 25rem;
         border-radius: 10px;
-        border-radius: 10% / 50%;
+        width: 50rem;
+        height: 27rem;
+        /* border-radius: 10% / 50%; */
     }
     div.about {
         /* background-color: #f8f9fa7c; */
@@ -168,9 +166,8 @@ p.dev {
     div#name-container {
         background-color: #f8f9fa89;
         width: 50rem;
-        height: 25rem;
         border-radius: 10px;
-        border-radius: 10% / 50%;
+        /* border-radius: 10% / 50%; */
     }
     div.about {
         /* background-color: #f8f9fa7c; */
@@ -195,40 +192,70 @@ p.dev {
     .container-top {
         overflow: hidden;
     }
+    .container-avatar {
+        position: relative;
+        right: -10px;
+    }
+    h1.top-container-name {
+        font-family: 'Pacifico', cursive;
+        color: white;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        text-shadow: -3px -3px 3px rgba(255, 255, 255, .1), 3px 3px 3px rgba(255, 146, 19, .5);
+    }
     div#name-container {
         background-color: #f8f9fa89;
-        width: 50rem;
-        height: 25rem;
+        width: 25rem;
+        height: 40rem;
         border-radius: 10px;
-        border-radius: 10% / 50%;
+        /* border-radius: 10% / 50%; */
     }
     div.about {
         /* background-color: #f8f9fa7c; */
         border-radius: 5px;
-        padding: 15px 2px;
+        padding: 3px 2px;
         letter-spacing: 1.2px;
         font-family: var(--font-main);
         font-weight: 500;
         text-shadow: 0px 1px 0px black;
         font-size: 0.9rem;
     }
+    .quote2 {
+        left: -460px;
+    }
+    .quote1 {
+        left: -50px;
+    }
+    .preply {
+        position: relative;
+        top: -8px;
+        right: 40px;
+    }
 }
 
 
 /********** Small devices only **********/
 
-@media (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
     .container-top {
         overflow: hidden;
     }
     div#name-container {
         background-color: #f8f9fa89;
-        width: 38rem;
-        height: 15rem;
+        width: 33rem;
+        height: 18rem;
         border-radius: 10px;
         padding: 1rem;
         margin-left: 2rem;
         /* border-radius: 10% / 50%; */
+    }
+    .avatar {
+        position: relative;
+        top: 30px;
+    }
+    .name-hi {
+        margin: 0;
+        padding: 0;
     }
     div.about {
         /* background-color: #f8f9fa7c; */
@@ -249,6 +276,17 @@ p.dev {
     p.name-hi {
         margin-bottom: 8px;
     }
+    .quote2 {
+        left: -258px;
+    }
+    .quote1 {
+        left: -50px;
+    }
+    .preply {
+        position: relative;
+        top: -1px;
+        right: 125px;
+    }
 }
 
 
@@ -261,11 +299,24 @@ p.dev {
     div#name-container {
         background-color: #f8f9fa89;
         width: 25rem;
-        height: 15rem;
+        height: 25rem;
         border-radius: 10px;
         padding: 1rem;
         margin-left: 10px;
         /* border-radius: 10% / 50%; */
+    }
+    section#section-top {
+        position: relative;
+        width: 100%;
+        height: 58em;
+    }
+    .avatar {
+        position: relative;
+        top: 30px;
+    }
+    .name-hi {
+        margin: 0;
+        padding: 0;
     }
     div.about {
         border-radius: 5px;
@@ -284,5 +335,16 @@ p.dev {
     }
     p.name-hi {
         margin-bottom: 4px;
+    }
+    .quote2 {
+        left: -258px;
+    }
+    .quote1 {
+        left: -50px;
+    }
+    .preply {
+        position: relative;
+        top: -1px;
+        right: 105px;
     }
 }
