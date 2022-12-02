@@ -3,7 +3,11 @@
 .examples {
     margin-top: 6rem;
     height: 36rem;
-    background-color: #faf7436c;
+    /* background-color: #faf7436c; */
+}
+
+#sectionExamples {
+    background-color: #dce2e93a;
 }
 
 .cell {
