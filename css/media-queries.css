@@ -20,6 +20,19 @@
         text-shadow: 0px 1px 0px black;
         font-size: 1rem;
     }
+    .dropdown-content {
+        border-radius: 5px;
+        display: none;
+        position: absolute;
+        right: 0;
+        color: rgba(68, 68, 68, 0.6);
+        background-color: #f9f9f9d4;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        top: 45px;
+        right: 113px;
+    }
 }
 
 
@@ -155,6 +168,17 @@ section#sectionTop {
     margin: 1rem;
 }
 
+.dropdown {
+    display: flex;
+    position: absolute;
+    right: 30px;
+}
+
+.dropdown-content {
+    top: 45px;
+    right: -3px;
+}
+
 
 /* end container-certificate */
 
@@ -162,6 +186,18 @@ section#sectionTop {
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .container-top {
+        /* z-index: -1; */
+        /* border: solid #444; */
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        /* overflow: hidden; */
+    }
     /* top */
     .col-md-8 {
         flex: 0 0 auto;
@@ -175,7 +211,8 @@ section#sectionTop {
     }
     .container-avatar {
         position: relative;
-        right: -10px;
+        right: -20px;
+        top: -30px;
     }
     h1.top-container-name {
         font-family: 'Pacifico', cursive;
@@ -184,10 +221,19 @@ section#sectionTop {
         letter-spacing: 2px;
         text-shadow: -3px -3px 3px rgba(255, 255, 255, .1), 3px 3px 3px rgba(255, 146, 19, .5);
     }
+    .dropdown {
+        display: flex;
+        position: absolute;
+        right: 30px;
+    }
+    .dropdown-content {
+        top: 45px;
+        right: -3px;
+    }
     div#name-container {
         background-color: #f8f9fa89;
         width: 35rem;
-        height: 42rem;
+        height: 48rem;
         border-radius: 10px;
         /* border-radius: 10% / 50%; */
     }
@@ -200,12 +246,6 @@ section#sectionTop {
         font-weight: 500;
         text-shadow: 0px 1px 0px black;
         font-size: 0.9rem;
-    }
-    .quote2 {
-        left: -460px;
-    }
-    .quote1 {
-        left: -50px;
     }
     .preply {
         position: relative;
@@ -307,7 +347,11 @@ section#sectionTop {
     .dropdown {
         display: flex;
         position: absolute;
-        right: -30px;
+        right: 30px;
+    }
+    .dropdown-content {
+        top: 45px;
+        right: -3px;
     }
 }
 
@@ -349,8 +393,8 @@ section#sectionTop {
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-        top: 48px;
-        right: 113px;
+        top: 45px;
+        right: -3px;
     }
     section#section-top {
         position: relative;
@@ -394,7 +438,7 @@ section#sectionTop {
         margin: 0;
         position: relative;
         top: -90px;
-        width: 336px!important;
+        width: 420px!important;
     }
     .section-skills {
         width: 326px!important;
@@ -448,10 +492,10 @@ section#sectionTop {
         margin-top: 0rem;
     }
     .quote2 {
-        left: -77px;
+        /* left: -77px; */
     }
     .quote1 {
-        right: 54px;
+        /* right: 54px; */
     }
     .preply {
         position: relative;
