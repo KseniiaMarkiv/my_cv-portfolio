@@ -438,7 +438,7 @@ section#sectionTop {
         margin: 0;
         position: relative;
         top: -90px;
-        width: 420px!important;
+        width: 100%!important;
     }
     .section-skills {
         width: 326px!important;
