@@ -105,7 +105,6 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    padding-right: 6rem;
 }
 
 .dropdown-content {
@@ -305,6 +304,11 @@ section#sectionTop {
         top: -61px;
         left: 110px;
     }
+    .dropdown {
+        display: flex;
+        position: absolute;
+        right: -30px;
+    }
 }
 
 
@@ -333,7 +337,7 @@ section#sectionTop {
     .dropdown {
         display: flex;
         position: absolute;
-        right: -20px;
+        right: 1rem;
     }
     .dropdown-content {
         border-radius: 5px;
@@ -475,3 +479,17 @@ section#sectionTop {
 
 
 /* end top */
+
+
+/*********** Extra small devices only  ***********/
+
+@media (max-width: 575px) {
+    .dropdown {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+    }
+    #GenerateButton {
+        display: none;
+    }
+}
