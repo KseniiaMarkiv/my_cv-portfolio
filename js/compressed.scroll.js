@@ -1,0 +1,1 @@
+window.addEventListener("scroll",()=>{var e=document.documentElement.scrollHeight-window.innerHeight,e=window.scrollY/e*document.documentElement.clientWidth;document.getElementById("progress").style.width=e+"px"});
