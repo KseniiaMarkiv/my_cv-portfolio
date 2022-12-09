@@ -65,8 +65,8 @@
     <div id="progress"></div>
     <main id="main"></main>
 
-    <div class="container m-0 p-0">
-        <div class="common-nav">
+    <div class="container-fluid m-0 p-0">
+        <div class="container common-nav">
             <div class="container-button position-absolute ms-3">
                 <button id='GenerateButton' class="btn btn-outline-warning" onclick="generate();">Click me <span>&#128522;</span></button>
             </div>
@@ -82,34 +82,34 @@
                 </div>
             </div>
         </div>
-        <section id="sectionTop" class="position-relative container-top">
-            <div w3-include-html="snippets/top.html"></div>
+        <section id="sectionTop" class="position-relative d-flex justify-content-center container-top">
+            <div w3-include-html="snippets/top.html" class="container"></div>
         </section>
 
-        <section id="sectionSkills" class="position-relative">
-            <div w3-include-html="snippets/skills.html " class="section-skills"></div>
+        <section id="sectionSkills" class="position-relative d-flex justify-content-center">
+            <div w3-include-html="snippets/skills.html " class="container section-skills"></div>
         </section>
 
-        <section id="sectionCertificate" class="h-100 w-100 container-fluid">
+        <section id="sectionCertificate" class="h-100 w-100 container-fluid d-flex justify-content-center">
             <div w3-include-html="snippets/certificates.html" class="row"></div>
         </section>
 
-        <section id="sectionExamples" class="examples ms-3 mb-5">
+        <section id="sectionExamples" class="examples w-100 ms-3 mb-5">
             <p id='heading-skills' class="d-flex justify-content-center name-hi pt-5 fs-4 fw-bold">Examples</p>
 
             <div class="main-carousel pt-5 ">
-                <div class="cell ">
+                <div class="cell">
                     <a href="https://github.com/KseniiaMarkiv/capstone-api" target="_blank"> <img src="css/imgs/examples/capstone.jpeg " class="carousel-imgs" alt="Capstone app from 6 Course Coursera"></a>
                 </div>
-                <div class="cell ">
+                <div class="cell">
                     <a href="https://kseniiamarkiv.github.io/course5/assignment5/#/" target="_blank"><img src="css/imgs/examples/restaurant.jpeg " class="carousel-imgs" alt="Restaurant DAVID CHU'S CHINA BISTRO"></a>
                 </div>
-                <div class="cell "> <img src="css/imgs/examples/app-search-books-rails.jpeg " class="carousel-imgs " alt="... ">
+                <div class="cell"> <img src="css/imgs/examples/app-search-books-rails.jpeg " class="carousel-imgs " alt="... ">
                 </div>
             </div>
         </section>
 
-        <footer id="sectionContacts" class="container h-100">
+        <footer id="sectionContacts" class="container w-100 h-100">
             <div class="row mb-3">
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                     <a id="footer" type="button" class="btn btn-outline-info border border-2 border-info" href="#sectionTop"><i class="fa-solid fa-arrow-up fa-1x"></i></a>

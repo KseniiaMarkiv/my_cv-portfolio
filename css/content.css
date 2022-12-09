@@ -1,33 +1,59 @@
-@import url("style.css");
-@import url("media-queries.css");
-.examples {
-    margin-top: 6rem;
-    height: 36rem;
-    /* background-color: #faf7436c; */
-}
-
-#sectionExamples {
-    background-color: #dce2e93a;
-}
-
-.cell {
-    width: 33%;
-    height: 350px;
-    margin: 0 15px;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.cell img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-
-/********** Large devices only **********/
-
-@media (min-width: 992px) and (max-width: 1199px) {
+    @import url("style.css");
+    @import url("media-queries.css");
+    .examples {
+        margin-top: 6rem;
+        height: 36rem;
+        /* background-color: #faf7436c; */
+    }
+    
+    #sectionExamples {
+        background-color: #dce2e93a;
+    }
+    
+    .cell {
+        width: 33%;
+        height: 350px;
+        margin: 0 15px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    
+    .flickity-prev-next-button.next {
+        right: 50px!important;
+    }
+    
+    .flickity-prev-next-button.previous {
+        left: 50px!important;
+    }
+    
+    .cell img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    /********** Large devices only **********/
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .cell {
+            width: 45%;
+            height: 350px;
+            margin: 0 15px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .cell img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+    /* examples */
+    
+    .examples {
+        margin-top: 6rem;
+        height: 36rem;
+    }
+    
     .cell {
         width: 45%;
         height: 350px;
@@ -35,93 +61,63 @@
         overflow: hidden;
         border-radius: 8px;
     }
+    
     .cell img {
         width: 100%;
         height: 350px;
         object-fit: cover;
     }
-}
-
-
-/* examples */
-
-.examples {
-    margin-top: 6rem;
-    height: 36rem;
-}
-
-.cell {
-    width: 45%;
-    height: 350px;
-    margin: 0 15px;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.cell img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-
-/* end examples */
-
-
-/********** Medium devices only **********/
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .cell {
-        width: 35%;
-        height: 250px;
-        margin: 0 15px;
-        overflow: hidden;
-        border-radius: 8px;
+    /* end examples */
+    /********** Medium devices only **********/
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        .cell {
+            width: 35%;
+            height: 250px;
+            margin: 0 15px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .cell img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
     }
-    .cell img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-    }
-}
-
-
-/********** Small devices only **********/
-
-@media (max-width: 767px) {
-    .cell {
-        width: 100%;
-        height: 350px;
-        margin: 0 15px;
-        overflow: hidden;
-        border-radius: 8px;
-    }
-    .cell img {
-        width: 90%;
-        height: 350px;
-        object-fit: cover;
-        padding-left: 4rem;
-    }
-    /* .carousel-imgs {
+    /********** Small devices only **********/
+    
+    @media (max-width: 767px) {
+        .cell {
+            width: 100%;
+            height: 350px;
+            margin: 0 15px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .cell img {
+            width: 90%;
+            height: 350px;
+            object-fit: cover;
+            padding-left: 4rem;
+        }
+        /* .carousel-imgs {
         padding-left: 5rem;
     } */
-}
-
-
-/*********** Extra small devices only  ***********/
-
-@media (max-width: 576px) {
-    .cell {
-        width: 100%;
-        height: 350px;
-        margin: 0 15px;
-        overflow: hidden;
-        border-radius: 8px;
     }
-    .cell img {
-        width: 90%;
-        height: 350px;
-        object-fit: cover;
-        padding-left: 3rem;
+    /*********** Extra small devices only  ***********/
+    
+    @media (max-width: 576px) {
+        .cell {
+            width: 100%;
+            height: 350px;
+            margin: 0 15px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .cell img {
+            width: 90%;
+            height: 350px;
+            object-fit: cover;
+            padding-left: 3rem;
+        }
     }
-}

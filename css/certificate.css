@@ -29,45 +29,15 @@ a.button {
     position: relative;
     background-color: #f8f9fa;
     width: 28rem;
-    height: 40em;
+    height: 630px;
     /* width: 18rem;
     height: 30rem; */
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 #sectionCertificate {
     margin-top: 5px;
 }
-
-
-/* .container-certificate .box:nth-child(2) {
-    margin-left: 2rem;
-}
-
-.container-certificate .box:nth-child(3) {
-    margin-left: 2rem;
-}
-
-.container-certificate .box:nth-child(4) {
-    margin-left: 2rem;
-}
-
-.container-certificate .box:nth-child(5) {
-    width: 28rem;
-    height: 40em;
-}
-
-.container-certificate .box:nth-child(6) {
-    width: 28rem;
-    height: 40em;
-}
-
-.container-certificate .box:nth-child(7) {
-    width: 28rem;
-    height: 40em;
-} */
 
 .container-certificate .box::before {
     content: "";
@@ -118,6 +88,27 @@ a.button {
     overflow: hidden;
 }
 
+.container-certificate .box.box-inline-mine1 {
+    width: 27rem;
+}
+
+.container-certificate .box.box-inline-mine2 {
+    height: 630px;
+}
+
+.container-certificate .box.box-inline-mine1 .content {
+    height: 100%;
+}
+
+.container-certificate .box.box-inline-mine1 .content .slideshow-container {
+    height: 100%;
+}
+
+.container-certificate .box.box-inline-mine1 .content .slideshow-container .mySlides {
+    height: 100%;
+    margin-top: 10px;
+}
+
 .container-certificate .box .content .imgs {
     color: var(--clr);
     width: 25rem;
@@ -133,6 +124,10 @@ a.button {
     transition: 0.5s ease-in-out;
 }
 
+.container-certificate .box.box-inline-mine1 .content .imgs {
+    width: 23rem;
+}
+
 .container-certificate .box:hover .content .imgs {
     background: var(--clr);
     color: #f8f9fa;
@@ -140,7 +135,7 @@ a.button {
 }
 
 .container-certificate .box .content .text {
-    width: 100%;
+    width: 25rem;
     height: 17rem;
 }
 
@@ -395,11 +390,41 @@ a.button {
 }
 
 
+/********** large devices only **********/
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container-certificate .box {
+        width: 23rem;
+    }
+    .container-certificate .box .content .imgs {
+        width: 19rem;
+        height: 17rem;
+    }
+    .slideshow-container.mySlides.imgs {
+        width: 317px;
+    }
+    .numbertext {
+        top: 20px;
+    }
+    .container-certificate .box:nth-child(3) .content .text {
+        width: 20rem;
+        height: 15rem;
+    }
+    .container-certificate .box .content .text {
+        width: 100%;
+        height: 16rem;
+    }
+}
+
+
 /********** Medium devices only **********/
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .container-top {
         overflow: hidden;
+    }
+    .container-certificate .box {
+        width: 29rem;
     }
 }
 
