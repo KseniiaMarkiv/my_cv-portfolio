@@ -46,7 +46,7 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell {
     width: 66%;
     height: 400px;
     margin-right: 3rem;
-    counter-increment: gallery-cell;
+    /* counter-increment: gallery-cell; */
     border-radius: 8px;
     overflow: hidden;
 }
@@ -57,8 +57,9 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell {
 section#sectionProjects div.projects div.main-carousel div.carousel-cell:before {
     display: block;
     text-align: center;
-    content: counter(gallery-cell);
-    line-height: 0;
+    /* it's need to show up number img */
+    /* content: counter(gallery-cell);
+    line-height: 200px; */
 }
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
