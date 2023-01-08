@@ -12,13 +12,12 @@
     <link rel="stylesheet" href="css/skills.min.css" />
     <link rel="stylesheet" href="css/certificates.min.css" />
     <link rel="stylesheet" href="css/magic.min.css" />
-    <link rel="stylesheet" href="css/projects.min.css" media="screen" />
 
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
+
     <title>CV Profile</title>
 
     <script>
-        function includeHTML(){var t,e,n,i,s;for(t=document.getElementsByTagName("*"),e=0;e<t.length;e++)if(i=(n=t[e]).getAttribute("w3-include-html"))return(s=new XMLHttpRequest).onreadystatechange=function(){4==this.readyState&&(200==this.status&&(n.innerHTML=this.responseText),404==this.status&&(n.innerHTML="Page not found."),n.removeAttribute("w3-include-html"),includeHTML())},s.open("GET",i,!0),void s.send()}
+       function includeHTML(){var t,e,n,i,s;for(t=document.getElementsByTagName("*"),e=0;e<t.length;e++)if(i=(n=t[e]).getAttribute("w3-include-html"))return(s=new XMLHttpRequest).onreadystatechange=function(){4==this.readyState&&(200==this.status&&(n.innerHTML=this.responseText),404==this.status&&(n.innerHTML="Page not found."),n.removeAttribute("w3-include-html"),includeHTML())},s.open("GET",i,!0),void s.send()}
     </script>
 </head>
 
@@ -38,7 +37,7 @@
                 <li><a href="about.html" target="_blank"><span>About</span></a></li>
                 <li><a href="#sectionSkills"><span>Skills</span></a></li>
                 <li><a href="#sectionCertificate"><span>Certificates</span></a></li>
-                <li><a href="#sectionProjects"><span>Projects</span></a></li>
+                <li><a href="projects.html" target="_blank"><span>Projects</span></a></li>
                 <li><a href="#sectionContacts"><span>Contacts</span></a></li>
                 <li><a href="blogs.html" target="_blank"><span>Blogs</span></a></li>
             </ul>
@@ -52,95 +51,6 @@
     </section>
     <section id="sectionSkills" w3-include-html="snippets/skills.html"> </section>
     <section id="sectionCertificate" w3-include-html="snippets/certificates.html"></section>
-
-    <section id="sectionProjects">
-        <div class="projects">
-            <div class="row-projects-title">
-                <h1 class="title-projects"><span>P</span>rojects</h1>
-            </div>
-            <div class="main-carousel" data-flickity='{ "autoPlay": true, "wrapAround": true, "freeScroll": true }'>
-                <div class="carousel-cell">
-                    <a href="https://github.com/KseniiaMarkiv/capstone-api/tree/8-module#all-objects" target="_blank">
-                        <img src="imgs/examples/app_portfolio2-small.webp" class="carousel-imgs mySlides" width="1267" height="400" alt="Capstone app from 6 Course Coursera">
-                        <div class="overlay">
-                            <div class="text">
-                                <h5>Capstone app from 6 Course Coursera &#8208; is for look for nearest place to you.</h5>
-                                <p>Abilities: RoR , Auth, Google Maps, MongoDB etc... </p>
-                                <p>More info in main branch. </p> <span class="blue-text">Just click on image</span>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-cell">
-                    <a href="https://kseniiamarkiv.github.io/fruit-app/" target="_blank"><img src="imgs/examples/mango.webp" class="carousel-imgs mySlides" width="1267" height="400" alt="Fruit website image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h5>Amazing fruit Website</h5>
-                                <p>to seeing website<span class="blue-text"> Just click on image</span></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-cell">
-                    <a href="https://github.com/KseniiaMarkiv/parallax-projects#readme" target="_blank"><img src="https://kseniiamarkiv.github.io/parallax-projects/fish.jpg" class="carousel-imgs mySlides" width="1267" height="400" alt="Several projects of main page with parallax">
-                        <div class="overlay">
-                            <div class="text">
-                                <h5>Parallax-projects</h5>
-                                <p>Several projects of main page with parallax without responsive design on tablet and less devices.</p>
-                                <p class="blue-text">Just click on image to pass in GitHub page with links</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-cell">
-                    <a href="https://kseniiamarkiv.github.io/qr-code/second-var/" target="_blank"><img src="imgs/examples/qr-code2-small.webp" class="carousel-imgs mySlides" width="1267" height="400" alt="QR Code Generator version 2">
-                        <div class="overlay">
-                            <div class="text">
-                                <h5>QR Code Generator</h5>
-                                <p class="blue-text">Just click on image</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-cell">
-                    <a href="https://github.com/KseniiaMarkiv/progress-bars#readme" target="_blank"><img src="https://kseniiamarkiv.github.io/progress-bars/forth.jpg" class="carousel-imgs mySlides" width="1267" height="400" alt="Several progress bar projects">
-                        <div class="overlay">
-                            <div class="text">
-                                <h5>Several progress bar projects</h5>
-                                <p class="blue-text">Just click on image to pass in GitHub page with links</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-cell">
-                    <a href="https://kseniiamarkiv.github.io/course5/assignment5/#/" target="_blank"><img src="imgs/examples/restaurant-small.webp" class="carousel-imgs mySlides" width="1267" height="400" alt="Restaurant DAVID CHU'S CHINA BISTRO">
-                        <div class="overlay">
-                            <div class="text">
-                                <h5>Restaurant DAVID CHU'S CHINA BISTRO</h5>
-                                <p>Implemented Menu page according to assignment</p>
-                                <p><em class="gray-text">as soon as possible I will add implementation on RoR</em></p>
-                                <p class="blue-text">Just click on image</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-cell"> <img src="imgs/examples/app-search-books-rails-small.webp" class="carousel-imgs mySlides" width="1267" height="400" alt="implement API books">
-                </div>
-                <div class="carousel-cell">
-                    <a href="https://kseniiamarkiv.github.io/qr-code/first-var/index2.html" target="_blank"><img src="imgs/examples/qr-code-small.webp" class="carousel-imgs mySlides" width="1267" height="400" alt="QR Code Generator version 1">
-                        <div class="overlay">
-                            <div class="text">
-                                <h5>QR Code Generator</h5>
-                                <p class="blue-text">Just click on image</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <footer id="sectionContacts" class="container-footer">
         <div class="row-footer">
@@ -167,7 +77,6 @@
     <script async="async" nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script src="js/lib/anime.min.js"></script>
     <script src="js/script.min.js"></script>

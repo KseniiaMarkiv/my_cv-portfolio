@@ -1,3 +1,7 @@
+nav.navbar-mine ul.sidenav li.active.project a {
+    font-size: 1.2rem;
+}
+
 section#sectionProjects {
     width: 100vw;
     height: auto;
@@ -79,28 +83,31 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.o
     color: black;
     overflow: hidden;
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     justify-content: start;
-    align-content: center;
+    align-content: flex-start;
     flex-wrap: wrap;
     font-family: 'Gabriela', serif;
 }
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text {
     margin-left: 1rem;
+    max-width: 90%;
 }
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text p {
     margin-left: 2rem;
+    margin: 0;
 }
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text h5 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell img:hover {
-    transform: scale3d(1.3, 1.3, 1.3);
+    transform: scale3d(1.2, 1.2, 1.2);
     transition: 1s;
 }
 
@@ -114,24 +121,25 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell:hover {
 
 .flickity-prev-next-button.next {
     right: 70px!important;
-    color: black;
-}
-
-.flickity-prev-next-button.next:hover {
-    right: 70px!important;
-    border: 2px solid #FAF643;
-    color: #FAF643;
+    color: #4688FB;
 }
 
 .flickity-prev-next-button.previous {
     left: 70px!important;
-    color: black;
+    color: #4688FB;
 }
 
-.flickity-prev-next-button.previous:hover {
-    left: 70px!important;
-    border: 2px solid #FAF643;
-    color: #FAF643;
+button.flickity-button {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+}
+
+
+/* hide disabled button */
+
+.flickity-button:disabled {
+    display: none;
 }
 
 .flickity-page-dots {
@@ -197,6 +205,9 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell:hover {
     .flickity-prev-next-button.previous:hover {
         left: 60px!important;
     }
+    button.flickity-button {
+        background: transparent;
+    }
     section#sectionProjects div.projects div.main-carousel div.carousel-cell {
         width: 100%;
         height: 350px;
@@ -210,12 +221,11 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell:hover {
         object-fit: cover;
         padding-left: 0;
     }
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell img:hover {
-        transform: scale3d(1.3, 1.3, 1.3);
-    }
     section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay {
-        width: 100%;
-        height: 40%;
+        align-content: center;
+    }
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay h5 {
+        margin-top: 0;
     }
     section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text p,
     .blue-text,
@@ -227,7 +237,26 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell:hover {
 
 /* Extra-small devices (landscape phones, up to 576px) */
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text p,
+    .blue-text,
+    .gray-text {
+        font-size: 12px;
+        margin: 0;
+    }
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text h5 {
+        font-size: 0.7rem;
+    }
+    .flickity-page-dots .dot {
+        width: 0.5rem!important;
+        height: 0.5rem!important;
+        background: #4688FB!important;
+    }
+    button.flickity-button {
+        width: 50px;
+        height: 50px;
+    }
+}
 
 
 /* xxs devices (phones, up to 395px) */
@@ -244,6 +273,27 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell:hover {
     }
     section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay {
         width: 90%;
+    }
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text p,
+    .blue-text,
+    .gray-text {
+        font-size: 12px;
+        margin: 0;
+    }
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text h5 {
+        font-size: 0.7rem;
+    }
+    .flickity-prev-next-button.next {
+        right: 70px!important;
+    }
+    .flickity-prev-next-button.next:hover {
+        right: 70px!important;
+    }
+    .flickity-prev-next-button.previous {
+        left: 40px!important;
+    }
+    .flickity-prev-next-button.previous:hover {
+        left: 40px!important;
     }
 }
 

@@ -315,7 +315,6 @@ section.for-space {
         justify-content: center;
         position: relative;
         width: 100vw;
-        left: -6px;
     }
     nav.navbar-mine ul.sidenav li.active a {
         font-size: 2rem;
