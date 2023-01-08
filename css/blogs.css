@@ -14,7 +14,7 @@ body {
     width: 100vw;
     position: relative;
     z-index: 1;
-    background-color: whites;
+    background-color: rgba(203, 200, 200, 0.452);
     /* background-image: linear-gradient(to bottom, #bbcfe1 0%, #e8f2f6 80%); */
     overflow: hidden;
 }

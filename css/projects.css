@@ -1,3 +1,7 @@
+body {
+    background-color: whitesmoke;
+}
+
 nav.navbar-mine ul.sidenav li.active.project a {
     font-size: 1.2rem;
 }
