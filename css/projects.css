@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 body {
     background-color: whitesmoke;
 }
@@ -55,12 +56,9 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell {
     height: 400px;
     margin-right: 3rem;
     /* counter-increment: gallery-cell; */
-    border-radius: 8px;
+    border-radius: 3px;
     overflow: hidden;
 }
-
-
-/* cell number */
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell:before {
     display: block;
@@ -72,10 +70,10 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell:before 
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
     display: block;
-    width: 100%;
-    height: 400px;
     object-fit: cover;
     transition: 2s;
+    width: 100%;
+    height: 400px;
 }
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay {
@@ -111,7 +109,7 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.o
 }
 
 section#sectionProjects div.projects div.main-carousel div.carousel-cell img:hover {
-    transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.1, 1.1, 1.1);
     transition: 1s;
 }
 
@@ -126,11 +124,27 @@ section#sectionProjects div.projects div.main-carousel div.carousel-cell:hover {
 .flickity-prev-next-button.next {
     right: 70px!important;
     color: #4688FB;
+    transition: 0.5s;
 }
 
 .flickity-prev-next-button.previous {
     left: 70px!important;
     color: #4688FB;
+    transition: 0.5s;
+}
+
+.flickity-prev-next-button.next:hover {
+    right: 70px!important;
+    background: transparent;
+    color: #FAF643;
+    transition: 0.5s;
+}
+
+.flickity-prev-next-button.previous:hover {
+    left: 70px!important;
+    background: transparent;
+    color: #FAF643;
+    transition: 0.5s;
 }
 
 button.flickity-button {
